@@ -39,4 +39,4 @@ To check it works, you must be able to run `spark-shell` from your terminal.
 * This script uses `python3`, ensure python3 is installed and running in your terminal.
 * When creating a jupyter notebook, ensure you've choosed python 3 kernel, otherwise it will not work.
 * There's also a notebook `PysparkDemo.ipynb` to test apache spark worked.
-* In case you've created multiple spark contexts, run `$ killall java` to stop all apache spark.
+* In case you've created multiple spark contexts, run `$ killall java` to stop all apache spark instances.
