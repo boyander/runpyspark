@@ -21,7 +21,7 @@ It will open `pyspark` configured with jupyter notebook ready to use.
 * Ensure you have spark-shell in your $PATH variable (**Note:** this suposes you are running zsh or oh-my-zsh terminal, if that's not the case or you are not sure, just change `.zshrc` to `.bashrc` in the following command).
 
 ```bash
-    $ echo 'export PATH="$PATH:~/spark/bin"' >> ~/.zshrc
+    $ echo "export PATH=\"\$PATH:$HOME/spark/bin\"" >> ~/.zshrc
     $ source ~/.zshrc
 ```
 To check it works, you must be able to run `spark-shell` from your terminal.
