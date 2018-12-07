@@ -1,10 +1,12 @@
-# Easy to use apache spark script
+# Easy to use environment with `jupyter notebook` and apache spark.
 
-Just copy the `runPySpark.sh` script into your prefered directory and inside it run:
+Instead of opening `jupyter notebook`, just copy the `runPySpark.sh` script into your prefered directory and inside it run:
 
 ```bash
     $ bash runPySpark.sh
 ```
+
+It will open `pyspark` configured with jupyter notebook ready to use. 
 
 **IMPORTANT:** Before running the `runPySpark.sh` script, ensure you have followed the checklist for your OS.
 
@@ -31,3 +33,10 @@ To check it works, you must be able to run `spark-shell` from your terminal.
 * brew install jq 
 * brew install spark-shell
 * Run the `runPySpark.sh` script and enjoy!
+
+
+## Important Notes
+* This script uses `python3`, ensure python3 is installed and running in your terminal.
+* When creating a jupyter notebook, ensure you've choosed python 3 kernel, otherwise it will not work.
+* There's also a notebook `PysparkDemo.ipynb` to test apache spark worked.
+* In case you've created multiple spark contexts, run `$ killall java` to stop all apache spark.
