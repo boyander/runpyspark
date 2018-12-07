@@ -8,7 +8,7 @@ Copy the runPySpark script into your prefered folder and inside it run the follo
 ## Checklist for Ubuntu
 * Install spark following this [medium post](https://medium.com/@josemarcialportilla/installing-scala-and-spark-on-ubuntu-5665ee4b62b1)
 * Create an alias of spark in your home directory or rename the installation to just "spark"
-    
+
     $ ln -s ~/spark-2.4.0-bin-hadoop2.7 ~/spark
 
 * Ensure you have spark-shell in your $PATH variable (**Note:** this suposes you are running zsh or oh-my-zsh terminal, if that's not the case or you are not sure, just change `.zshrc` to `.bashrc` in the following command).
