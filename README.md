@@ -2,6 +2,7 @@
 
 **IMPORTANT:** Before runing the `runPySpark.sh` script, ensure you have followed the checklist for your OS.
 Copy the runPySpark script into your prefered folder and inside it run the following:
+
     $ bash runPySpark.sh
 
 ## Checklist for Ubuntu
