@@ -1,4 +1,4 @@
-
+#! /bin/bash
 function checkCommand {
     CMD=$1
     HELP_INSTALL=$2
@@ -10,8 +10,6 @@ function checkCommand {
         exit 1
     fi
 }
-
-
 
 # Check installed packages first
 checkCommand "git"
