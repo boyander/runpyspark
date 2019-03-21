@@ -33,6 +33,16 @@ fi
 export PYSPARK_DRIVER_PYTHON=jupyter
 export PYSPARK_DRIVER_PYTHON_OPTS='notebook'
 export PYSPARK_PYTHON=python3
+
+handler()
+{
+    echo "Stop pyspark...."
+    kill -9 %1
+    echo "Done!"
+}
+
+trap handler SIGINT
+
 pyspark &
 sleep 5
 open "http://localhost:4040"
