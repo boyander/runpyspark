@@ -9,7 +9,7 @@ Instead of opening `jupyter notebook`, just copy the `preapareSparkEnvironment.s
 **Run directly from github:**
 
 ```bash
-    $ curl https://raw.githubusercontent.com/boyander/runpyspark/master/preapareSparkEnvironment.sh | source
+    $ source <(curl -s https://raw.githubusercontent.com/boyander/runpyspark/master/prepareSparkEnvironment.sh)
 ```
 
 It prepare your shell with `pyspark` configured to use `jupyter notebook`. After env is ready run `pyspark` it will open a jupyter notebook.
