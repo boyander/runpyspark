@@ -22,7 +22,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     checkCommand "brew"
     INSTALLED_SPARK_VERSION=$(brew info --json=v1  apache-spark | jq -r ".[0].installed[0].version")
-    echo "Using installed spark: $INSTALLED_SPARK_VERSION"
+    echo "Using installed spark (brew): $INSTALLED_SPARK_VERSION"
     export SPARK_HOME=/usr/local/Cellar/apache-spark/$INSTALLED_SPARK_VERSION/libexec
 else
     echo "NOT SUPPORTED OS"

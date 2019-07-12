@@ -1,14 +1,20 @@
 # Easy to use environment with `jupyter notebook` and apache spark.
 
-Instead of opening `jupyter notebook`, just copy the `runPySpark.sh` script into your prefered directory and inside it run:
+Instead of opening `jupyter notebook`, just copy the `preapareSparkEnvironment.sh` script into your prefered directory and inside it run:
 
 ```bash
-    $ bash runPySpark.sh
+    $ source preapareSparkEnvironment.sh
 ```
 
-It will open `pyspark` configured with jupyter notebook ready to use. 
+**Run directly from github:**
 
-**IMPORTANT:** Before running the `runPySpark.sh` script, ensure you have followed the checklist for your OS.
+```bash
+    $ curl https://raw.githubusercontent.com/boyander/runpyspark/master/preapareSparkEnvironment.sh | source
+```
+
+It prepare your shell with `pyspark` configured to use `jupyter notebook`. After env is ready run `pyspark` it will open a jupyter notebook.
+
+**IMPORTANT:** Before running the `preapareSparkEnvironment.sh` script, ensure you have followed the checklist for your OS.
 
 ## Checklist for Ubuntu
 * Install spark following this [medium post](https://medium.com/@josemarcialportilla/installing-scala-and-spark-on-ubuntu-5665ee4b62b1)
@@ -26,14 +32,11 @@ It will open `pyspark` configured with jupyter notebook ready to use.
 ```
 To check it works, you must be able to run `spark-shell` from your terminal.
 
-* Run the `runPySpark.sh` script and enjoy!
 
 ## Checklist for MacOSX
 * You need brew installed
 * brew install jq 
 * brew install spark-shell
-* Run the `runPySpark.sh` script and enjoy!
-
 
 ## Important Notes
 * This script uses `python3`, ensure python3 is installed and running in your terminal.
