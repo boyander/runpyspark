@@ -34,9 +34,8 @@ To check it works, you must be able to run `spark-shell` from your terminal.
 
 
 ## Checklist for MacOSX
-* You need brew installed
-* brew install jq 
-* brew install spark-shell
+You need brew installed, install the following packages:
+* `brew install jq apache-spark`
 
 ## Important Notes
 * This script uses `python3`, ensure python3 is installed and running in your terminal.
