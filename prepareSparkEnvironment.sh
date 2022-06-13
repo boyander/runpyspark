@@ -23,7 +23,8 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     checkCommand "brew"
     INSTALLED_SPARK_VERSION=$(brew info --json=v1  apache-spark | jq -r ".[0].installed[0].version")
     echo "Using installed spark (brew): $INSTALLED_SPARK_VERSION"
-    export SPARK_HOME=/usr/local/Cellar/apache-spark/$INSTALLED_SPARK_VERSION/libexec
+    PREFIX=$(brew --prefix)
+    export SPARK_HOME=$PREFIX/Cellar/apache-spark/$INSTALLED_SPARK_VERSION/libexec
 else
     echo "NOT SUPPORTED OS"
     exit 1;
@@ -35,17 +36,3 @@ export PYSPARK_DRIVER_PYTHON_OPTS='notebook'
 export PYSPARK_PYTHON=python3
 
 echo "Your environment is ready, run 'pyspark' command"
-
-# handler()
-# {
-#     echo "Stop pyspark...."
-#     kill -9 %1
-#     echo "Done!"
-# }
-
-# trap handler SIGINT
-
-# pyspark &
-# sleep 5
-# open "http://localhost:4040"
-# wait %1
